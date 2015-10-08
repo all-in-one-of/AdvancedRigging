@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{618ED8BB-0E69-102A-08BA-EEE3A0D633BC}") = "GemBot", "Assembly-CSharp.csproj", "{8A725A11-4AC1-5902-7460-050099F466FB}"
+Project("{618ED8BB-0E69-102A-08BA-EEE3A0D633BC}") = "GemBot", "Assembly-CSharp-vs.csproj", "{8A725A11-4AC1-5902-7460-050099F466FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																GlobalSection(MonoDevelopProperties) = preSolution
+																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

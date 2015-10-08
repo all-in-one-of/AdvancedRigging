@@ -16,6 +16,10 @@ public class playerMovement : MonoBehaviour {
 	public float groundCheckRadius = 0.1f;
 
 	private Vector3 bodyUp;
+
+	public GameObject bullet;
+	public Transform shotStart;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
@@ -26,10 +30,17 @@ public class playerMovement : MonoBehaviour {
 	void Update () {
 		Jump ();
 		Movement ();
+		Attack ();
 	}
 
 	void FixedUpdate () {
 
+	}
+
+	void Attack () {
+		if (Input.GetKeyDown (KeyCode.F)) {
+			Instantiate (bullet, shotStart.position, shotStart.rotation);
+		}
 	}
 
 	void Movement () {
