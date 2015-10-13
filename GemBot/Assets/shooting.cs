@@ -18,10 +18,8 @@ public class shooting : MonoBehaviour {
 			shotVelocity = -originalShotVelocity + player.GetComponent<Rigidbody> ().velocity.x;
 			GetComponent<Transform> ().localScale = new Vector2 (-1.680365f, transform.localScale.y);
 		}
-		
-		
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		

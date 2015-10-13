@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\bulletGravity.cs" />
      <Compile Include="Assets\gravityAttractor.cs" />
      <Compile Include="Assets\gravityPlayer.cs" />
      <Compile Include="Assets\playerMovement.cs" />
