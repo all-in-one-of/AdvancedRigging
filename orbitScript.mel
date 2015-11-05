@@ -1,0 +1,12 @@
+rename "polySurface3" "orbiter";
+currentTime 1;
+select orbiter;
+    rotate 0 220 0;
+setKeyframe "orbiter.ry";
+int $STOP = 24;
+float $DEGREES = -3.75;
+for ($i = 0; $i < $STOP; $i++){
+    currentTime $i;
+    rotate -r 0 $DEGREES 0;
+    setKeyframe "orbiter.ry";
+}

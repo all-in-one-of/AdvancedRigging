@@ -1,0 +1,26 @@
+joint -n "L_hip" -p 0 0 0;
+joint -n "L_knee" -p 4 0 0;
+joint -n "L_ankle" -p 8 0 0;
+joint -n "L_toe" -p 10 0 0;
+    jointDisplayScale 0.5;
+select L_hip;
+    rotate -r 90 -15 -90;
+    move -r 2 8.5 0;
+select L_knee;
+    rotate 0 0 -30;
+select L_ankle;
+    rotate 0 0 90;
+select L_hip;
+    makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
+select -r L_hip.rotatePivot;
+select -add L_ankle.rotatePivot;
+    ikHandle -n "L_leg_ikHandle" -sol ikRPsolver;
+curve -d 1 -p 3 0.5 -0.5 -p 4 0.5 -0.5 -p 4 0.5 1.5 
+    -p 4.5 0.5 1.5 -p 3.5 0.5 2.5 -p 2.5 0.5 1.5 -p 3 0.5 1.5 
+    -p 3 0.5 -0.5 -n "L_leg_IK_CTRL";
+move -r 3.5 .5 1 L_leg_IK_CTRL.scalePivot L_leg_IK_CTRL.rotatePivot;
+select L_leg_ikHandle;
+select -add L_leg_IK_CTRL;
+    parent;
+select -r L_leg_IK_CTRL;
+    makeIdentity -apply true -t 1 -r 1 -s 1 -n 0 -pn 1;
