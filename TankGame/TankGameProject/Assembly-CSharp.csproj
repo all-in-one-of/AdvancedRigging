@@ -45,17 +45,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EnemyHealth.cs" />
-     <Compile Include="Assets\PlayerOptions.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\Scripts\GridMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerOptions.cs" />
      <Compile Include="Assets\Scripts\SnapToGrid.cs" />
      <Compile Include="Assets\Scripts\bullet.cs" />
+     <Compile Include="Assets\Scripts\clickFollow.cs" />
      <Compile Include="Assets\Scripts\levelEditor.cs" />
      <Compile Include="Assets\Scripts\levelHandler.cs" />
      <Compile Include="Assets\Scripts\lightSwitch.cs" />
      <Compile Include="Assets\Scripts\shooting.cs" />
-     <Compile Include="Assets\clickFollow.cs" />
-     <Compile Include="Assets\startButton.cs" />
+     <Compile Include="Assets\Scripts\startButton.cs" />
      <None Include="Assets\Resources\levels.xml" />
      <None Include="Assets\Resources\editor.txt" />
  <Reference Include="UnityEngine.UI">
