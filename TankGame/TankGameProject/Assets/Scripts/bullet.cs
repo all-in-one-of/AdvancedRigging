@@ -1,28 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour {
+public class bullet : MonoBehaviour {
 	
 //	public GameObject bullet;
-	public float lifeDuration = 1f;
-//	private EnemyHealth healthCount;
+//	public float lifeDuration = 1f;
+	private EnemyHealth enemyHealth;
 
 	void Start () {
-//		healthCount = GameOject.Find ("number").GetComponent<EnemyHealth> ();
-		Destroy (gameObject, 1f);
+		enemyHealth = GameObject.Find ("enemyHealthNumber").GetComponent<EnemyHealth> ();
+		Destroy (gameObject, 2f);
 	}
-/*	
+
+/*	void OnCollisionEnter(Collision collision){
+		if (collision.gameObject.tag == "enemy") {
+			Destroy (gameObject);
+			}
+		}
+*/
 	
-	void OnTriggerEnter(Collider bullet)
+	void OnTriggerEnter(Collider other)
 	{
-		if (bullet.gameObject.tag == "Enemy") {
+		if (other.gameObject.tag == "Enemy") {
 			//Update the GUI
-			EnemyHealth.healthCount -= 1;
+			enemyHealth.enemyHealthNumber -= 1;
 			//Set the bullet to inactive
-			DestroyObject (bullet.gameObject);
+//			DestroyObject (bullet.gameObject);
 		}
 	}
-	*/
+
 	/*
 	public GameObject enemy;
 
