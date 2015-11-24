@@ -4,12 +4,13 @@ using System.Collections;
 public class bullet : MonoBehaviour {
 	
 //	public GameObject bullet;
-//	public float lifeDuration = 1f;
+	public float lifeDuration = 1f;
 	private EnemyHealth enemyHealth;
+
 
 	void Start () {
 //		enemyHealth = GameObject.Find ("EHN").GetComponent<EnemyHealth> ();
-		Destroy (gameObject, 1.5f);
+		Destroy (gameObject, 1f);
 	}
 
 	void OnCollisionEnter(Collision col){

@@ -7,11 +7,11 @@ public class EnemyBullet : MonoBehaviour {
 	
 	void Start () {
 		//		enemyHealth = GameObject.Find ("EHN").GetComponent<EnemyHealth> ();
-		Destroy (gameObject, 1.5f);
+		Destroy (gameObject, 0.3f);
 	}
 	
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "Player") 
+		if (col.gameObject.tag == "Player")// || col.gameObject.tag == "Enemy")// || col.gameObject.tag == "EnemyBullet")
 			Destroy (gameObject);
 	}
 

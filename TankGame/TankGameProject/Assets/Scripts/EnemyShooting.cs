@@ -5,7 +5,10 @@ public class EnemyShooting : MonoBehaviour {
 
 	public Rigidbody enemyBullet;
 	public float bulletSpeed = 4f;
-	public float lifeDuration = 2f;
+	public float bulletSpeed2 = -4f;
+	public float bulletSpeed3 = 4f;
+	public float bulletSpeed4 = 4f;
+	public float lifeDuration = 1f;
 	private int turnVariable = 1;
 
 	// Use this for initialization
@@ -21,6 +24,12 @@ public class EnemyShooting : MonoBehaviour {
 
 			Rigidbody bulletClone = (Rigidbody)Instantiate (enemyBullet, new Vector3 (transform.position.x + .5f, transform.position.y + 0.1f, transform.position.z), transform.rotation);
 			bulletClone.velocity = new Vector3 (bulletSpeed, 0, 0);
+			Rigidbody bulletClone2 = (Rigidbody)Instantiate (enemyBullet, new Vector3 (transform.position.x - .5f, transform.position.y + 0.1f, transform.position.z), transform.rotation);
+			bulletClone2.velocity = new Vector3 (bulletSpeed2, 0, 0);
+			Rigidbody bulletClone3 = (Rigidbody)Instantiate (enemyBullet, new Vector3 (transform.position.x, transform.position.y + 0.1f, transform.position.z + 0.1f), transform.rotation);
+			bulletClone3.velocity = new Vector3 (0, 0, bulletSpeed);
+			Rigidbody bulletClone4 = (Rigidbody)Instantiate (enemyBullet, new Vector3 (transform.position.x, transform.position.y + 0.1f, transform.position.z - 0.1f), transform.rotation);
+			bulletClone4.velocity = new Vector3 (0, 0, -bulletSpeed);
 
 //			GameObject bullet = (GameObject)Instantiate(bullet);
 //			bullet.transform.position = transform.position;
@@ -33,7 +42,7 @@ public class EnemyShooting : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (turnVariable == 1 && Input.GetKey (KeyCode.Space)) {
+		if (turnVariable == 1 && Input.GetKeyDown (KeyCode.Space)) {
 			turnVariable ++;
 			if (turnVariable == 2)
 				print ("Opponent's Turn");
