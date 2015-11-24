@@ -7,6 +7,7 @@ public class PlayerOptions : MonoBehaviour {
 	public bool isSelected = false;
 	public RaycastHit hit = new RaycastHit();
 	public Ray ray;
+	public Transform fireButton;
 
 
 	// Use this for initialization
@@ -31,6 +32,19 @@ public class PlayerOptions : MonoBehaviour {
 
 	void OnMouseDown()
 	{
+//		fireButton = Canvas.GetComponent<Button>();
+//		fireButton = GameObject.Find ("Button");
+//		CanvasGroup.FireButton.SetActive = true;
+		if (fireButton.GetComponent<Button>().IsInteractable() == true)
+		{
+			fireButton.GetComponent<Button>().interactable = false; 
+		}
+		else //Else make it interactable
+		{
+			fireButton.GetComponent<Button>().interactable = true;
+		}
+
+
 //		new Rect (transform.position.x, transform.position.y, 130, 100);
 		print ("Player is selected");
 

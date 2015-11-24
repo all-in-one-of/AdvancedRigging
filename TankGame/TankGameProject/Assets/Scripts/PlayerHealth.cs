@@ -3,20 +3,20 @@ using UnityEngine.UI;
 using System.Collections;
 [ExecuteInEditMode]
 
-public class EnemyHealth : MonoBehaviour {
+public class PlayerHealth : MonoBehaviour {
 
-	public Text enemyHealthNum;
-	public int enemyHealthNumber = 3;
+	public Text playerHealthNum;
+	public int playerHealthNumber = 10;
 	private int damage = 1;
 
 	void Start(){
-		print (enemyHealthNumber);
+		print (playerHealthNumber);
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "bullet") {
-			enemyHealthNumber -= damage;
-			print ("enemyHit successful!" + enemyHealthNumber);
+		if (col.gameObject.tag == "EnemyBullet") {
+			playerHealthNumber -= damage;
+			print ("You've been hit!" + playerHealthNumber);
 
 		}
 
@@ -29,9 +29,9 @@ public class EnemyHealth : MonoBehaviour {
 //		if (enemyHealthNumber == 0)
 //			Destroy (GameObject Enemy);
 
-		enemyHealthNum.text = enemyHealthNumber.ToString ();
+		playerHealthNum.text = playerHealthNumber.ToString ();
 
-		if (enemyHealthNumber == 0)
+		if (playerHealthNumber == 0)
 			Destroy (gameObject);
 		//GetComponent<Text>().text = enemyHealthNumber.ToString ();
 //		eHealth = enemyHealthNumber.ToString;
