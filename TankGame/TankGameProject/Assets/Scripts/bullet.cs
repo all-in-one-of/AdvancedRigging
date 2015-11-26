@@ -4,22 +4,22 @@ using System.Collections;
 public class bullet : MonoBehaviour {
 	
 //	public GameObject bullet;
-//	public float lifeDuration = 1f;
+	public float lifeDuration = 1f;
 	private EnemyHealth enemyHealth;
 
+
 	void Start () {
-		enemyHealth = GameObject.Find ("enemyHealthNumber").GetComponent<EnemyHealth> ();
-		Destroy (gameObject, 2f);
+//		enemyHealth = GameObject.Find ("EHN").GetComponent<EnemyHealth> ();
+		Destroy (gameObject, 1f);
 	}
 
-/*	void OnCollisionEnter(Collision collision){
-		if (collision.gameObject.tag == "enemy") {
+	void OnCollisionEnter(Collision col){
+		if (col.gameObject.tag == "Enemy") 
 			Destroy (gameObject);
-			}
 		}
-*/
+
 	
-	void OnTriggerEnter(Collider other)
+/*	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Enemy") {
 			//Update the GUI
@@ -28,7 +28,7 @@ public class bullet : MonoBehaviour {
 //			DestroyObject (bullet.gameObject);
 		}
 	}
-
+*/
 	/*
 	public GameObject enemy;
 

@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: medShardRefCombo.ma
-//Last modified: Thu, Nov 05, 2015 03:22:16 PM
+//Last modified: Tue, Nov 24, 2015 11:18:21 AM
 //Codeset: 1252
 file -rdi 1 -ns "medShard1" -rfn "medShard1RN" -op "v=0;" "C:/Users/Tom/Documents/GitHub/JuniorGameProject/medShard1.ma";
 file -rdi 1 -ns "medShard2" -rfn "medShard2RN" -op "v=0;" "C:/Users/Tom/Documents/GitHub/JuniorGameProject/medShard2.ma";
@@ -20,14 +20,14 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1665.8670164331475 78.835465628661012 18994.587384679249 ;
-	setAttr ".r" -type "double3" 0.32811850263846981 5.0000000000024283 -3.1178748863715354e-018 ;
+	setAttr ".t" -type "double3" -352.29931416354066 -17080.950540274218 2327.9124649436803 ;
+	setAttr ".r" -type "double3" -276.87188149732532 -0.59999999999769105 6.9578448687502615e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".ncp" 10;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 19816.236911315187;
+	setAttr ".coi" 16982.116362462119;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -152,7 +152,7 @@ createNode reference -n "medShard1RN";
 		"medShard1RN"
 		"medShard1RN" 0
 		"medShard1RN" 1
-		2 "|medShard1:pCylinder4" "rotate" " -type \"double3\" 89.999999999999957 0 -124.30998992750744";
+		2 "|medShard1:pCylinder4" "rotate" " -type \"double3\" 90.000000000003368 536.24018823911615 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "medShard2RN";
@@ -161,7 +161,7 @@ createNode reference -n "medShard2RN";
 		"medShard2RN"
 		"medShard2RN" 0
 		"medShard2RN" 1
-		2 "|medShard2:pCylinder4" "rotate" " -type \"double3\" 89.999999999999972 0 56.872396259873049";
+		2 "|medShard2:pCylinder4" "rotate" " -type \"double3\" 90.000000000000782 626.2401882391141 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "medShard3RN";
@@ -169,7 +169,7 @@ createNode reference -n "medShard3RN";
 		"medShard3RN"
 		"medShard3RN" 0
 		"medShard3RN" 1
-		2 "|medShard3:pCylinder4" "rotate" " -type \"double3\" 89.999999999999957 0 -214.57607788023037";
+		2 "|medShard3:pCylinder4" "rotate" " -type \"double3\" 89.999999999994344 716.24018823911013 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "medShard4RN";
@@ -177,7 +177,7 @@ createNode reference -n "medShard4RN";
 		"medShard4RN"
 		"medShard4RN" 0
 		"medShard4RN" 1
-		2 "|medShard4:pCylinder4" "rotate" " -type \"double3\" 89.999999999999972 0 -33.185166104331337";
+		2 "|medShard4:pCylinder4" "rotate" " -type \"double3\" 89.999999999920163 446.2401882391174 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
@@ -196,9 +196,8 @@ select -ne :postProcessList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 5 ".r";
 select -ne :initialShadingGroup;
-	setAttr -s 12 ".dsm";
+	setAttr -s 4 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 8 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultResolution;

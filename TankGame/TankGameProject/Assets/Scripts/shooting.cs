@@ -23,7 +23,7 @@ public class shooting : MonoBehaviour {
 	}
 	
 	void Fire(){
-		Rigidbody bulletClone = (Rigidbody)Instantiate (bullet, new Vector3 (transform.position.x, transform.position.y + 0.1f, transform.position.z), transform.rotation);
+		Rigidbody bulletClone = (Rigidbody)Instantiate (bullet, new Vector3 (transform.position.x - 0.4f, transform.position.y + 0.1f, transform.position.z), transform.rotation);
 		bulletClone.velocity = new Vector3 (-bulletSpeed, 0, 0);
 
 //		Rigidbody bulletClone2 = (Rigidbody)Instantiate (bullet, new Vector3 (transform.position.x, transform.position.y + 0.1f, transform.position.z), transform.rotation);
