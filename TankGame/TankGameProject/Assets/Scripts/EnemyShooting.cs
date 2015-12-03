@@ -18,8 +18,8 @@ public class EnemyShooting : MonoBehaviour {
 
 	void FireEnemyBullet()
 	{
-		GameObject player = GameObject.Find ("Player");
-		if(player != null)
+//		GameObject player = GameObject.Find ("Player");
+//		if(player != null)
 		{
 
 			Rigidbody bulletClone = (Rigidbody)Instantiate (enemyBullet, new Vector3 (transform.position.x + .5f, transform.position.y + 0.1f, transform.position.z), transform.rotation);

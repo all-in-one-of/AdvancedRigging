@@ -4,8 +4,8 @@ using System.Collections;
 public class shooting : MonoBehaviour {
 
 	public Rigidbody bullet;
-	public float bulletSpeed = 4f;
-	public float lifeDuration = 2f;
+	public float bulletSpeed = 8f;
+	public float lifeDuration = 0.5f;
 	
 	// Use this for initialization
 	void Start () {
