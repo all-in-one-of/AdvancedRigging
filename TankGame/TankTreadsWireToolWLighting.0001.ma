@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
-//Name: TankTreadsWireToolStart&Stop.ma
-//Last modified: Wed, Dec 02, 2015 07:41:17 PM
+//Name: TankTreadsWireToolWLighting.0001.ma
+//Last modified: Wed, Dec 02, 2015 08:01:35 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -12,18 +12,14 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.046798936357309 0.51597997709711607 24.536771655353512 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 97.74554297990673;
+	setAttr ".coi" 29.890358636026892;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -8.245891301668081 1.7603542775380472 17.397286103448433 ;
+	setAttr ".tp" -type "double3" -8.451314848395711 0.13947269120578887 6.6698031017713042 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -8456,9 +8452,11 @@ createNode transform -n "FrontHigh_PointLight";
 	setAttr ".t" -type "double3" -14.901037198038527 4.9622217929154111 2.5907291505121357 ;
 createNode pointLight -n "FrontHigh_PointLightShape" -p "FrontHigh_PointLight";
 	setAttr -k off ".v";
-createNode transform -n "pointLight1";
-createNode pointLight -n "pointLightShape1" -p "pointLight1";
+createNode transform -n "FrontLow_PointLight";
+	setAttr ".t" -type "double3" -4.446085228009296 -1.8959256058322007 5.8545131270905415 ;
+createNode pointLight -n "FrontLow_PointLightShape" -p "FrontLow_PointLight";
 	setAttr -k off ".v";
+	setAttr ".in" 0.5;
 createNode lightLinker -s -n "lightLinker1";
 	setAttr -s 38 ".lnk";
 	setAttr -s 38 ".ign";
@@ -8795,8 +8793,8 @@ createNode polyPlane -n "polyPlane2";
 	setAttr ".sh" 1;
 	setAttr ".cuv" 2;
 select -ne :time1;
-	setAttr ".o" 226;
-	setAttr ".unw" 226;
+	setAttr ".o" 213;
+	setAttr ".unw" 213;
 select -ne :renderPartition;
 	setAttr -s 2 ".st";
 select -ne :renderGlobalsList1;
@@ -8894,6 +8892,7 @@ relationship "ignore" ":lightLinker1" "pCylinderShape8.message" "Ground_Directio
 relationship "ignore" ":lightLinker1" "pCylinderShape14.message" "Ground_DirectionalLightShape.message";
 relationship "ignore" ":lightLinker1" ":initialParticleSE.message" "Ground_DirectionalLightShape.message";
 relationship "ignore" ":lightLinker1" ":initialShadingGroup.message" "Ground_DirectionalLightShape.message";
+relationship "ignore" ":lightLinker1" "TankTopShape.message" "FrontLow_PointLightShape.message";
 relationship "ignore" ":lightLinker1" "GroundShape.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
@@ -8952,7 +8951,7 @@ connectAttr "SunlightShape.ltd" ":lightList1.l" -na;
 connectAttr "Sunlight_ReflectedShape.ltd" ":lightList1.l" -na;
 connectAttr "Ground_DirectionalLightShape.ltd" ":lightList1.l" -na;
 connectAttr "FrontHigh_PointLightShape.ltd" ":lightList1.l" -na;
-connectAttr "pointLightShape1.ltd" ":lightList1.l" -na;
+connectAttr "FrontLow_PointLightShape.ltd" ":lightList1.l" -na;
 connectAttr "wireTreadShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape8.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape9.iog" ":initialShadingGroup.dsm" -na;
@@ -8976,8 +8975,8 @@ connectAttr "Sunlight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "Sunlight_Reflected.iog" ":defaultLightSet.dsm" -na;
 connectAttr "Ground_DirectionalLight.iog" ":defaultLightSet.dsm" -na;
 connectAttr "FrontHigh_PointLight.iog" ":defaultLightSet.dsm" -na;
-connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "FrontLow_PointLight.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"|leftSide_areaLight|leftSide_areaLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n1\n\"|Sunlight|SunlightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n2\n\"|Sunlight_Reflected|Sunlight_ReflectedShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n3\n\"|Ground_DirectionalLight|Ground_DirectionalLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n4\n\"|FrontHigh_PointLight|FrontHigh_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n5\n\"|pointLight1|pointLightShape1\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"|leftSide_areaLight|leftSide_areaLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n1\n\"|Sunlight|SunlightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n2\n\"|Sunlight_Reflected|Sunlight_ReflectedShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n3\n\"|Ground_DirectionalLight|Ground_DirectionalLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n4\n\"|FrontHigh_PointLight|FrontHigh_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n5\n\"|FrontLow_PointLight|FrontLow_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
-// End of TankTreadsWireToolStart&Stop.ma
+// End of TankTreadsWireToolWLighting.0001.ma
