@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
-//Name: TankTreadsWireToolStart&Stop.ma
-//Last modified: Wed, Dec 02, 2015 07:41:17 PM
+//Name: TankTreadsWireToolWLighting.ma
+//Last modified: Wed, Dec 02, 2015 07:41:54 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -8980,4 +8980,4 @@ connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"|leftSide_areaLight|leftSide_areaLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n1\n\"|Sunlight|SunlightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n2\n\"|Sunlight_Reflected|Sunlight_ReflectedShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n3\n\"|Ground_DirectionalLight|Ground_DirectionalLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n4\n\"|FrontHigh_PointLight|FrontHigh_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n5\n\"|pointLight1|pointLightShape1\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
-// End of TankTreadsWireToolStart&Stop.ma
+// End of TankTreadsWireToolWLighting.ma

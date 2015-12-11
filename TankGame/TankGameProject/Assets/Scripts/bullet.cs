@@ -4,7 +4,7 @@ using System.Collections;
 public class bullet : MonoBehaviour {
 	
 //	public GameObject bullet;
-	public float lifeDuration = 0.25f;
+//	public float lifeDuration = 0.25f;
 	private EnemyHealth enemyHealth;
 
 
