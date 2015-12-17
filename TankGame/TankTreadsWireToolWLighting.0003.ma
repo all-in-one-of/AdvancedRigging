@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
-//Name: TankTreadsWireToolWLighting.0002.ma
-//Last modified: Sat, Dec 12, 2015 05:55:07 PM
+//Name: TankTreadsWireToolWLighting.0003.ma
+//Last modified: Sat, Dec 12, 2015 05:55:19 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -12,6 +12,14 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
+	setAttr ".t" -type "double3" -5.3993119775192824 3.6510279826493592 -28.285872617005726 ;
+	setAttr -av ".tx";
+	setAttr -av ".ty";
+	setAttr -av ".tz";
+	setAttr ".r" -type "double3" -7.4718814976336319 -528.99999999987301 0 ;
+	setAttr -av ".rx";
+	setAttr -av ".ry";
+	setAttr -av ".rz";
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
@@ -14176,4 +14184,4 @@ connectAttr "FrontLow_PointLight.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"|leftSide_areaLight|leftSide_areaLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n1\n\"|Sunlight|SunlightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n2\n\"|Sunlight_Reflected|Sunlight_ReflectedShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n3\n\"|Ground_DirectionalLight|Ground_DirectionalLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n4\n\"|FrontHigh_PointLight|FrontHigh_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n5\n\"|FrontLow_PointLight|FrontLow_PointLightShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
-// End of TankTreadsWireToolWLighting.0002.ma
+// End of TankTreadsWireToolWLighting.0003.ma
