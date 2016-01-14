@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: d0ac741e569b5b049bff35b0d268f943
+timeCreated: 1452555560
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: backWallCenter
+    100002: backWallCenter 1
+    100004: backWallEast
+    100006: backWallEast 1
+    100008: backWallWest
+    100010: backWallWest 1
+    100012: columnBase
+    100014: columnBase 1
+    100016: columnBase 2
+    100018: columnBase 3
+    100020: columnBase 4
+    100022: columnBase 5
+    100024: columnTop
+    100026: columnTop 1
+    100028: columnTop 2
+    100030: columnTop 3
+    100032: columnTop 4
+    100034: columnTop 5
+    100036: cornerPillarEast
+    100038: cornerPillarWest
+    100040: eastWall
+    100042: //RootNode
+    100044: EgyptLevelRef
+    100046: lowestFloor
+    100048: mainFireBowl
+    100050: mainFireBowl1
+    100052: mainFireBowl2
+    100054: MainStairs
+    100056: northWall
+    100058: pCube1
+    100060: pCube1 1
+    100062: pCube1 2
+    100064: pCube2
+    100066: pCube2 1
+    100068: pCube2 2
+    100070: pCube3
+    100072: pCube3 1
+    100074: pillar1
+    100076: pillar1 1
+    100078: pillar1 2
+    100080: pillar1 3
+    100082: pillar1 4
+    100084: pillar1 5
+    100086: pillar1 6
+    100088: pillar2
+    100090: pillar3
+    100092: pillar4
+    100094: pillar5
+    100096: pillar6
+    100098: planter
+    100100: planter1
+    100102: planter2
+    100104: planter3
+    100106: polySurface1
+    100108: polySurface1 1
+    100110: polySurface2
+    100112: pSphere1
+    100114: pSphere1 1
+    100116: rearFireBowl
+    100118: rearFireBowl1
+    100120: rearFireBowl1_pCube3
+    100122: rearFireBowl_pSphere1
+    100124: roof
+    100126: sideFloorEast
+    100128: sideFloorWest
+    100130: SideStairsEast
+    100132: SideStairsWest
+    100134: sideStepEast
+    100136: sideStepWest
+    100138: sideTopEast
+    100140: sideTopWest
+    100142: southWall
+    100144: stairsSide
+    100146: stairsSide 1
+    100148: stairsSide 2
+    100150: transform1
+    100152: transform1 1
+    100154: transform1 2
+    100156: transform10
+    100158: transform11
+    100160: transform2
+    100162: transform2 1
+    100164: transform2 2
+    100166: transform3
+    100168: transform4
+    100170: transform5
+    100172: transform6
+    100174: transform7
+    100176: transform8
+    100178: transform9
+    100180: westWall
+    400000: backWallCenter
+    400002: backWallCenter 1
+    400004: backWallEast
+    400006: backWallEast 1
+    400008: backWallWest
+    400010: backWallWest 1
+    400012: columnBase
+    400014: columnBase 1
+    400016: columnBase 2
+    400018: columnBase 3
+    400020: columnBase 4
+    400022: columnBase 5
+    400024: columnTop
+    400026: columnTop 1
+    400028: columnTop 2
+    400030: columnTop 3
+    400032: columnTop 4
+    400034: columnTop 5
+    400036: cornerPillarEast
+    400038: cornerPillarWest
+    400040: eastWall
+    400042: //RootNode
+    400044: EgyptLevelRef
+    400046: lowestFloor
+    400048: mainFireBowl
+    400050: mainFireBowl1
+    400052: mainFireBowl2
+    400054: MainStairs
+    400056: northWall
+    400058: pCube1
+    400060: pCube1 1
+    400062: pCube1 2
+    400064: pCube2
+    400066: pCube2 1
+    400068: pCube2 2
+    400070: pCube3
+    400072: pCube3 1
+    400074: pillar1
+    400076: pillar1 1
+    400078: pillar1 2
+    400080: pillar1 3
+    400082: pillar1 4
+    400084: pillar1 5
+    400086: pillar1 6
+    400088: pillar2
+    400090: pillar3
+    400092: pillar4
+    400094: pillar5
+    400096: pillar6
+    400098: planter
+    400100: planter1
+    400102: planter2
+    400104: planter3
+    400106: polySurface1
+    400108: polySurface1 1
+    400110: polySurface2
+    400112: pSphere1
+    400114: pSphere1 1
+    400116: rearFireBowl
+    400118: rearFireBowl1
+    400120: rearFireBowl1_pCube3
+    400122: rearFireBowl_pSphere1
+    400124: roof
+    400126: sideFloorEast
+    400128: sideFloorWest
+    400130: SideStairsEast
+    400132: SideStairsWest
+    400134: sideStepEast
+    400136: sideStepWest
+    400138: sideTopEast
+    400140: sideTopWest
+    400142: southWall
+    400144: stairsSide
+    400146: stairsSide 1
+    400148: stairsSide 2
+    400150: transform1
+    400152: transform1 1
+    400154: transform1 2
+    400156: transform10
+    400158: transform11
+    400160: transform2
+    400162: transform2 1
+    400164: transform2 2
+    400166: transform3
+    400168: transform4
+    400170: transform5
+    400172: transform6
+    400174: transform7
+    400176: transform8
+    400178: transform9
+    400180: westWall
+    2300000: backWallCenter
+    2300002: backWallCenter 1
+    2300004: backWallEast
+    2300006: backWallEast 1
+    2300008: backWallWest
+    2300010: backWallWest 1
+    2300012: columnBase
+    2300014: columnBase 1
+    2300016: columnBase 2
+    2300018: columnBase 3
+    2300020: columnBase 4
+    2300022: columnBase 5
+    2300024: columnTop
+    2300026: columnTop 1
+    2300028: columnTop 2
+    2300030: columnTop 3
+    2300032: columnTop 4
+    2300034: columnTop 5
+    2300036: cornerPillarEast
+    2300038: cornerPillarWest
+    2300040: eastWall
+    2300042: lowestFloor
+    2300044: mainFireBowl2
+    2300046: pCube2
+    2300048: pCube2 1
+    2300050: pCube2 2
+    2300052: pillar1 1
+    2300054: pillar1 2
+    2300056: pillar1 3
+    2300058: pillar1 4
+    2300060: pillar1 5
+    2300062: pillar1 6
+    2300064: planter
+    2300066: planter1
+    2300068: planter2
+    2300070: planter3
+    2300072: polySurface1
+    2300074: rearFireBowl1_pCube3
+    2300076: roof
+    2300078: sideFloorEast
+    2300080: sideFloorWest
+    2300082: sideStepEast
+    2300084: sideStepWest
+    2300086: sideTopEast
+    2300088: sideTopWest
+    2300090: westWall
+    3300000: backWallCenter
+    3300002: backWallCenter 1
+    3300004: backWallEast
+    3300006: backWallEast 1
+    3300008: backWallWest
+    3300010: backWallWest 1
+    3300012: columnBase
+    3300014: columnBase 1
+    3300016: columnBase 2
+    3300018: columnBase 3
+    3300020: columnBase 4
+    3300022: columnBase 5
+    3300024: columnTop
+    3300026: columnTop 1
+    3300028: columnTop 2
+    3300030: columnTop 3
+    3300032: columnTop 4
+    3300034: columnTop 5
+    3300036: cornerPillarEast
+    3300038: cornerPillarWest
+    3300040: eastWall
+    3300042: lowestFloor
+    3300044: mainFireBowl2
+    3300046: pCube2
+    3300048: pCube2 1
+    3300050: pCube2 2
+    3300052: pillar1 1
+    3300054: pillar1 2
+    3300056: pillar1 3
+    3300058: pillar1 4
+    3300060: pillar1 5
+    3300062: pillar1 6
+    3300064: planter
+    3300066: planter1
+    3300068: planter2
+    3300070: planter3
+    3300072: polySurface1
+    3300074: rearFireBowl1_pCube3
+    3300076: roof
+    3300078: sideFloorEast
+    3300080: sideFloorWest
+    3300082: sideStepEast
+    3300084: sideStepWest
+    3300086: sideTopEast
+    3300088: sideTopWest
+    3300090: westWall
+    4300000: eastWall
+    4300002: lowestFloor
+    4300004: sideFloorEast
+    4300006: sideFloorWest
+    4300008: sideStepEast
+    4300010: sideStepWest
+    4300012: columnBase
+    4300014: pillar1
+    4300016: columnTop
+    4300018: columnBase
+    4300020: pillar1
+    4300022: columnTop
+    4300024: columnBase
+    4300026: pillar1
+    4300028: columnTop
+    4300030: columnBase
+    4300032: pillar1
+    4300034: columnTop
+    4300036: columnBase
+    4300038: pillar1
+    4300040: columnTop
+    4300042: columnBase
+    4300044: pillar1
+    4300046: columnTop
+    4300048: sideTopWest
+    4300050: sideTopEast
+    4300052: roof
+    4300054: cornerPillarEast
+    4300056: cornerPillarWest
+    4300058: pCube2
+    4300060: pCube2
+    4300062: pCube2
+    4300064: polySurface1
+    4300066: rearFireBowl1_pCube3
+    4300068: mainFireBowl2
+    4300070: planter
+    4300072: planter1
+    4300074: planter2
+    4300076: planter3
+    4300078: westWall
+    4300080: backWallWest
+    4300082: backWallEast
+    4300084: backWallCenter
+    4300086: backWallWest
+    4300088: backWallEast
+    4300090: backWallCenter
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
