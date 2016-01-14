@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 0ecd477a350a9b24c96cecda05f41a68
+timeCreated: 1452734800
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: backWallCenter
+    100002: backWallCenter 1
+    100004: backWallEast
+    100006: backWallEast 1
+    100008: backWallWest
+    100010: backWallWest 1
+    100012: bench1
+    100014: bench2
+    100016: bench3
+    100018: bench4
+    100020: columnBase
+    100022: columnBase 1
+    100024: columnBase 2
+    100026: columnBase 3
+    100028: columnBase 4
+    100030: columnBase 5
+    100032: columnBase 6
+    100034: columnBase 7
+    100036: columnTop
+    100038: columnTop 1
+    100040: columnTop 2
+    100042: columnTop 3
+    100044: columnTop 4
+    100046: columnTop 5
+    100048: columnTop 6
+    100050: columnTop 7
+    100052: cornerPillarEast
+    100054: cornerPillarEastSouth
+    100056: cornerPillarWest
+    100058: cornerPillarWestSouth
+    100060: eastWall
+    100062: eastWallMiddle
+    100064: eastWallMiddle 1
+    100066: eastWallNorth
+    100068: eastWallNorth 1
+    100070: eastWallSouth
+    100072: eastWallSouth 1
+    100074: //RootNode
+    100076: EgyptLevelRef
+    100078: lamp
+    100080: lamp1
+    100082: lamp10
+    100084: lamp11
+    100086: lamp2
+    100088: lamp3
+    100090: lamp4
+    100092: lamp5
+    100094: lamp6
+    100096: lamp7
+    100098: lamp8
+    100100: lamp9
+    100102: lowestFloor
+    100104: mainFireBowl
+    100106: mainFireBowl2
+    100108: MainStairs
+    100110: newPillar1
+    100112: newPillar2
+    100114: newPillar3
+    100116: newPillar4
+    100118: newPillar5
+    100120: newPillar6
+    100122: newPillar7
+    100124: newPillar8
+    100126: northWall
+    100128: pCube1
+    100130: pCube1 1
+    100132: pCube2
+    100134: pCube2 1
+    100136: pCube2 2
+    100138: pCube4
+    100140: pillar1
+    100142: pillar1 1
+    100144: pillar1 2
+    100146: pillar1 3
+    100148: pillar1 4
+    100150: pillar1 5
+    100152: pillar1 6
+    100154: pillar1 7
+    100156: planter
+    100158: planter1
+    100160: planter2
+    100162: planter3
+    100164: pointLight10
+    100166: pointLight11
+    100168: pointLight3
+    100170: pointLight4
+    100172: pointLight5
+    100174: pointLight6
+    100176: pointLight7
+    100178: pointLight8
+    100180: pointLight9
+    100182: pointLightMainFireEast
+    100184: pointLightMainFireWest
+    100186: polySurface1
+    100188: polySurface4
+    100190: polySurface5
+    100192: polySurface6
+    100194: polySurface6 1
+    100196: polySurface7
+    100198: polySurface8
+    100200: priest
+    100202: rearFireBowl
+    100204: rearFireBowlEast
+    100206: rearFireBowlEast 1
+    100208: rearFireBowlWest
+    100210: roofNorth
+    100212: roofNorth1
+    100214: sideFloorEast
+    100216: sideFloorWest
+    100218: SideStairsEast
+    100220: SideStairsWest
+    100222: sideStepEast
+    100224: sideStepWest
+    100226: sideTopEast
+    100228: sideTopWest
+    100230: southWall
+    100232: spotLight1
+    100234: spotLight2
+    100236: spotLight3
+    100238: spotLight4
+    100240: spotLight5
+    100242: stairsSide
+    100244: stairsSide 1
+    100246: transform1
+    100248: transform1 1
+    100250: transform2
+    100252: transform2 1
+    100254: westWall
+    400000: backWallCenter
+    400002: backWallCenter 1
+    400004: backWallEast
+    400006: backWallEast 1
+    400008: backWallWest
+    400010: backWallWest 1
+    400012: bench1
+    400014: bench2
+    400016: bench3
+    400018: bench4
+    400020: columnBase
+    400022: columnBase 1
+    400024: columnBase 2
+    400026: columnBase 3
+    400028: columnBase 4
+    400030: columnBase 5
+    400032: columnBase 6
+    400034: columnBase 7
+    400036: columnTop
+    400038: columnTop 1
+    400040: columnTop 2
+    400042: columnTop 3
+    400044: columnTop 4
+    400046: columnTop 5
+    400048: columnTop 6
+    400050: columnTop 7
+    400052: cornerPillarEast
+    400054: cornerPillarEastSouth
+    400056: cornerPillarWest
+    400058: cornerPillarWestSouth
+    400060: eastWall
+    400062: eastWallMiddle
+    400064: eastWallMiddle 1
+    400066: eastWallNorth
+    400068: eastWallNorth 1
+    400070: eastWallSouth
+    400072: eastWallSouth 1
+    400074: //RootNode
+    400076: EgyptLevelRef
+    400078: lamp
+    400080: lamp1
+    400082: lamp10
+    400084: lamp11
+    400086: lamp2
+    400088: lamp3
+    400090: lamp4
+    400092: lamp5
+    400094: lamp6
+    400096: lamp7
+    400098: lamp8
+    400100: lamp9
+    400102: lowestFloor
+    400104: mainFireBowl
+    400106: mainFireBowl2
+    400108: MainStairs
+    400110: newPillar1
+    400112: newPillar2
+    400114: newPillar3
+    400116: newPillar4
+    400118: newPillar5
+    400120: newPillar6
+    400122: newPillar7
+    400124: newPillar8
+    400126: northWall
+    400128: pCube1
+    400130: pCube1 1
+    400132: pCube2
+    400134: pCube2 1
+    400136: pCube2 2
+    400138: pCube4
+    400140: pillar1
+    400142: pillar1 1
+    400144: pillar1 2
+    400146: pillar1 3
+    400148: pillar1 4
+    400150: pillar1 5
+    400152: pillar1 6
+    400154: pillar1 7
+    400156: planter
+    400158: planter1
+    400160: planter2
+    400162: planter3
+    400164: pointLight10
+    400166: pointLight11
+    400168: pointLight3
+    400170: pointLight4
+    400172: pointLight5
+    400174: pointLight6
+    400176: pointLight7
+    400178: pointLight8
+    400180: pointLight9
+    400182: pointLightMainFireEast
+    400184: pointLightMainFireWest
+    400186: polySurface1
+    400188: polySurface4
+    400190: polySurface5
+    400192: polySurface6
+    400194: polySurface6 1
+    400196: polySurface7
+    400198: polySurface8
+    400200: priest
+    400202: rearFireBowl
+    400204: rearFireBowlEast
+    400206: rearFireBowlEast 1
+    400208: rearFireBowlWest
+    400210: roofNorth
+    400212: roofNorth1
+    400214: sideFloorEast
+    400216: sideFloorWest
+    400218: SideStairsEast
+    400220: SideStairsWest
+    400222: sideStepEast
+    400224: sideStepWest
+    400226: sideTopEast
+    400228: sideTopWest
+    400230: southWall
+    400232: spotLight1
+    400234: spotLight2
+    400236: spotLight3
+    400238: spotLight4
+    400240: spotLight5
+    400242: stairsSide
+    400244: stairsSide 1
+    400246: transform1
+    400248: transform1 1
+    400250: transform2
+    400252: transform2 1
+    400254: westWall
+    2300000: backWallCenter
+    2300002: backWallCenter 1
+    2300004: backWallEast
+    2300006: backWallEast 1
+    2300008: backWallWest
+    2300010: backWallWest 1
+    2300012: bench1
+    2300014: bench2
+    2300016: bench3
+    2300018: bench4
+    2300020: columnBase
+    2300022: columnBase 1
+    2300024: columnBase 2
+    2300026: columnBase 3
+    2300028: columnBase 4
+    2300030: columnBase 5
+    2300032: columnBase 6
+    2300034: columnBase 7
+    2300036: columnTop
+    2300038: columnTop 1
+    2300040: columnTop 2
+    2300042: columnTop 3
+    2300044: columnTop 4
+    2300046: columnTop 5
+    2300048: columnTop 6
+    2300050: columnTop 7
+    2300052: cornerPillarEast
+    2300054: cornerPillarEastSouth
+    2300056: cornerPillarWest
+    2300058: cornerPillarWestSouth
+    2300060: eastWallMiddle
+    2300062: eastWallMiddle 1
+    2300064: eastWallNorth
+    2300066: eastWallNorth 1
+    2300068: eastWallSouth
+    2300070: eastWallSouth 1
+    2300072: lamp
+    2300074: lamp1
+    2300076: lamp10
+    2300078: lamp11
+    2300080: lamp2
+    2300082: lamp3
+    2300084: lamp4
+    2300086: lamp5
+    2300088: lamp6
+    2300090: lamp7
+    2300092: lamp8
+    2300094: lamp9
+    2300096: lowestFloor
+    2300098: mainFireBowl2
+    2300100: pCube2
+    2300102: pCube2 1
+    2300104: pCube2 2
+    2300106: pCube4
+    2300108: pillar1
+    2300110: pillar1 1
+    2300112: pillar1 2
+    2300114: pillar1 3
+    2300116: pillar1 4
+    2300118: pillar1 5
+    2300120: pillar1 6
+    2300122: pillar1 7
+    2300124: planter
+    2300126: planter1
+    2300128: planter2
+    2300130: planter3
+    2300132: polySurface4
+    2300134: polySurface5
+    2300136: polySurface7
+    2300138: polySurface8
+    2300140: priest
+    2300142: roofNorth
+    2300144: roofNorth1
+    2300146: sideFloorEast
+    2300148: sideFloorWest
+    2300150: sideStepEast
+    2300152: sideStepWest
+    2300154: sideTopEast
+    2300156: sideTopWest
+    3300000: backWallCenter
+    3300002: backWallCenter 1
+    3300004: backWallEast
+    3300006: backWallEast 1
+    3300008: backWallWest
+    3300010: backWallWest 1
+    3300012: bench1
+    3300014: bench2
+    3300016: bench3
+    3300018: bench4
+    3300020: columnBase
+    3300022: columnBase 1
+    3300024: columnBase 2
+    3300026: columnBase 3
+    3300028: columnBase 4
+    3300030: columnBase 5
+    3300032: columnBase 6
+    3300034: columnBase 7
+    3300036: columnTop
+    3300038: columnTop 1
+    3300040: columnTop 2
+    3300042: columnTop 3
+    3300044: columnTop 4
+    3300046: columnTop 5
+    3300048: columnTop 6
+    3300050: columnTop 7
+    3300052: cornerPillarEast
+    3300054: cornerPillarEastSouth
+    3300056: cornerPillarWest
+    3300058: cornerPillarWestSouth
+    3300060: eastWallMiddle
+    3300062: eastWallMiddle 1
+    3300064: eastWallNorth
+    3300066: eastWallNorth 1
+    3300068: eastWallSouth
+    3300070: eastWallSouth 1
+    3300072: lamp
+    3300074: lamp1
+    3300076: lamp10
+    3300078: lamp11
+    3300080: lamp2
+    3300082: lamp3
+    3300084: lamp4
+    3300086: lamp5
+    3300088: lamp6
+    3300090: lamp7
+    3300092: lamp8
+    3300094: lamp9
+    3300096: lowestFloor
+    3300098: mainFireBowl2
+    3300100: pCube2
+    3300102: pCube2 1
+    3300104: pCube2 2
+    3300106: pCube4
+    3300108: pillar1
+    3300110: pillar1 1
+    3300112: pillar1 2
+    3300114: pillar1 3
+    3300116: pillar1 4
+    3300118: pillar1 5
+    3300120: pillar1 6
+    3300122: pillar1 7
+    3300124: planter
+    3300126: planter1
+    3300128: planter2
+    3300130: planter3
+    3300132: polySurface4
+    3300134: polySurface5
+    3300136: polySurface7
+    3300138: polySurface8
+    3300140: priest
+    3300142: roofNorth
+    3300144: roofNorth1
+    3300146: sideFloorEast
+    3300148: sideFloorWest
+    3300150: sideStepEast
+    3300152: sideStepWest
+    3300154: sideTopEast
+    3300156: sideTopWest
+    4300000: lowestFloor
+    4300002: sideFloorEast
+    4300004: sideFloorWest
+    4300006: sideStepEast
+    4300008: sideStepWest
+    4300010: columnBase
+    4300012: pillar1
+    4300014: columnTop
+    4300016: sideTopWest
+    4300018: sideTopEast
+    4300020: roofNorth
+    4300022: cornerPillarEast
+    4300024: cornerPillarWest
+    4300026: pCube2
+    4300028: pCube2
+    4300030: planter
+    4300032: planter1
+    4300034: planter2
+    4300036: planter3
+    4300038: backWallWest
+    4300040: backWallEast
+    4300042: backWallCenter
+    4300044: backWallWest
+    4300046: backWallEast
+    4300048: backWallCenter
+    4300050: lamp
+    4300052: lamp1
+    4300054: lamp2
+    4300056: lamp3
+    4300058: lamp4
+    4300060: lamp5
+    4300062: lamp6
+    4300064: lamp7
+    4300066: priest
+    4300068: mainFireBowl2
+    4300070: roofNorth1
+    4300072: columnBase
+    4300074: pillar1
+    4300076: columnTop
+    4300078: columnBase
+    4300080: pillar1
+    4300082: columnTop
+    4300084: columnBase
+    4300086: pillar1
+    4300088: columnTop
+    4300090: columnBase
+    4300092: pillar1
+    4300094: columnTop
+    4300096: columnBase
+    4300098: pillar1
+    4300100: columnTop
+    4300102: columnBase
+    4300104: pillar1
+    4300106: columnTop
+    4300108: columnBase
+    4300110: pillar1
+    4300112: columnTop
+    4300114: eastWallNorth
+    4300116: eastWallMiddle
+    4300118: eastWallSouth
+    4300120: polySurface7
+    4300122: polySurface8
+    4300124: polySurface5
+    4300126: polySurface4
+    4300128: pCube2
+    4300130: eastWallNorth
+    4300132: eastWallMiddle
+    4300134: eastWallSouth
+    4300136: cornerPillarWestSouth
+    4300138: cornerPillarEastSouth
+    4300140: lamp8
+    4300142: lamp9
+    4300144: lamp10
+    4300146: lamp11
+    4300148: pCube4
+    4300150: bench1
+    4300152: bench2
+    4300154: bench3
+    4300156: bench4
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
